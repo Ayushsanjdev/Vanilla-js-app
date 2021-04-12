@@ -1,6 +1,13 @@
 // var textInput = document.querySelector("#translate").nodeValue;
 // console.log(textInput);
 
-var btn = document.querySelector("#btn").addEventListener("click", mouseClick());
+var btn = document.querySelector("#btn");
+var textInput = document.querySelector(".text-input")
 
-function mouseClick() {console.log("clicked!!");}
+function clickHandle() {
+    console.log("clicked!!");
+    console.log("input: ", textInput.value);
+}
+
+btn.addEventListener("click", clickHandle);
+
