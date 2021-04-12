@@ -9,44 +9,47 @@
 </head>
 
 <style>
+    * {
+        margin-left: 1rem;
+    }
     h1 {
         text-align: center;
     }
     textarea {
-        width: 50vw;
-        height: 30vh;
+        width: 20vw;
+        height: 10vh;
         display: block;
         text-align: center;
-        margin: 0 auto;
-        padding: 2rem;
+        padding: 1rem;
+        margin: 1rem 2rem;
+        border: 2px solid coral;    
     }
-    button { 
-        margin: auto;
+    div {
+        width: 40vw;
+        height: 20vh;
+        display: block;
         text-align: center;
-        position: relative; 
+        margin: 2rem;
+        padding: 2rem;
+        border: 5px groove greenyellow;
+    }
+    button {
+        margin: 0rem 2rem;
     }
 </style>
 
 <body>
-    <h1>Talk halla llaa!</h1>
-    <textarea name="Translator" class="text-input" placeholder="Enter your text here to translate into banana language">
-
-
-    </textarea>
+    <h1>Talk halla-llaa!</h1>
+    <textarea name="Translator" class="text-input" placeholder="Enter your text here to translate into halla-llaa language"></textarea>
     <button id="btn">
         Click Me!!
     </button>
+    <div id="output-div">
+        
+    </div>
+    <!-- <div id="output-div"></div> -->
 
-
-
-
-
-
-
-
-
-
-
+    <!-- script linked -->
     <script src="script.js"></script>
 </body>
 
