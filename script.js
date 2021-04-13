@@ -1,20 +1,16 @@
-// var textInput = document.querySelector("#translate").nodeValue;
-// console.log(textInput);
+var btn = document.querySelector("#btn");
+var textInput = document.querySelector(".text-input");
+var textOutput = document.querySelector("#output-div");
 
-let btn = document.querySelector("#btn");
-let textInput = document.querySelector(".text-input");
-let textOutput = document.querySelector("#output-div");
-
-var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text=I m Ayush Sanj";
-
-// var serverURL = "https://api.funtranslations.com/translate/groot.json";
+var serverURL = "https://api.funtranslations.com/translate/groot.json?text=textInput";
 
 function getTranslateURL(input) {
     return serverURL + "?" + "text" + input;
 }
 
 function clickHandle() {
-    let inputText = textInput.value;
+    var inputText = textInput.value;
+
     //fetching server
     fetch(getTranslateURL(inputText))
         .then(response => response.json())
