@@ -5,55 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Vanill Js App</title>
 </head>
 
-<style>
-    * {
-        margin-left: 1rem;
-    }
-    h1 {
-        text-align: center;
-    }
-    textarea {
-        width: 20vw;
-        height: 10vh;
-        display: block;
-        text-align: center;
-        padding: 1rem;
-        margin: 1rem 2rem;
-        border: 2px solid rgb(238, 202, 190);    
-    }
-    div {
-        width: 30vw;
-        height: 20vh;
-        display: block;
-        text-align: center;
-        margin: 2rem;
-        padding: 2rem;
-        border: 2px groove rgb(255, 165, 47);
-    }
-    p {
-        margin-left: 2rem;
-        color: red;
-    }
-    button {
-        margin: 0rem 2rem;
-    }
-</style>
 
 <body>
-    <h1>Talk halla-llaa!</h1>
-    <textarea name="Translator" class="text-input" placeholder="Enter your text here to translate into halla-llaa language"></textarea>
+    <header>
+        <img src="azmathulla-shaik-K5TfhhrNs20-unsplash.jpg" alt="I m groot">
+        <h1>Speak Groot</h1>
+    </header>
+    <div id="input-div">
+        <textarea name="Translator" class="text-input"
+            placeholder="write the sentence here, you want to translate into groot and learn to speak..."></textarea>
+    </div>
     <button id="btn">
-        Click Me!!
+        Translate
     </button>
     <p>Output:</p>
-    <div id="output-div">
-        
-    </div>
-    <!-- <div id="output-div"></div> -->
-
+    <div id="output-div"></div>
     <!-- script linked -->
     <script src="script.js"></script>
 </body>

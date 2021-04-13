@@ -7,7 +7,7 @@ let textOutput = document.querySelector("#output-div");
 
 var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text=I m Ayush Sanj";
 
-// var serverURL = "https://api.funtranslations.com/translate/minion.json?text=I m Ayush Sanj";
+// var serverURL = "https://api.funtranslations.com/translate/groot.json";
 
 function getTranslateURL(input) {
     return serverURL + "?" + "text" + input;
